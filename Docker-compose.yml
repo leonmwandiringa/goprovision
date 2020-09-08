@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  metrics-evd.api:
+    build:
+      context: src/Services/Api
+    container_name: Goprovision_api
+    environment:
+      - PORT=80
+    ports:
+      - "5001:5001"
+    restart: always
